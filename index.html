@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Goodfellas</title>
+     <!-- CSS -->
+     <link rel="stylesheet" href="/styles/style.css">
+     <link rel="shortcut icon" href="img/logos/icon.png" type="Mi sitio">
+     <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <div class="contenedor">
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="menu">
+                <input type="checkbox" name="btn" id="btn_menu">
+                <label for="btn_menu" class="menu__hamb_icon">
+                    <img src="/img/logos/icon_men.png" alt="">
+                    <!-- <div id="hamburguesa">
+                        <button>
+                            <span class="top_line"></span>
+                            <span class="mid_line"></span>
+                            <span class="bot_line"></span>
+                        </button>
+                    </div> -->
+                </label>
+                <ul class="menu__lista"> 
+                    <li class="menu__link"><a href="/index.html">Inicio</a></li>
+                    <li class="menu__link"><a href="/index.html#productos">Productos</a></li>
+                    <li class="menu__link"><a href="/html/faqs/faqs.html">Info</a></li>
+                    <li class="menu__link"><a href="/html/contact/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="logo"><a href="/index.html"><span>Goodfellas</span></a></div>
+            <div class="buscar"> 
+               <img src="/img/logos/icon_search.svg" alt="buscar" class="buscar__img"></div>
+        </header>
+        <script>
+            const nav = document.querySelector("#hamburguesa button");
+            nav.addEventListener("click", e => {
+                nav.classList.toggle("open");
+            });
+        </script>
+
+        <!-- MAIN -->
+        <main class="main">
+           <!--  <section class="carr">
+                <div class="carr__cont"><img src="" alt="" class="carr__img"></div>
+            </section> -->
+            <section class="carousel">
+                <div class="carousel__contenedor">
+                    <!-- <button aria-label="Anterior" class="carousel__anterior"><i><i class="fas fa-chevron-left"></i></i></button> -->
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <a href="/html/Categorias/Marvel/marvel.html" target="_self" class="marvel">
+                                <img src="/img/logos/marvel_logo.png" id="marvel">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" target="_self" class="dc">
+                                <img src="/img/logos/dc_logo.webp" id="dc">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" target="_self" class="starwars">
+                                <img src="/img/logos/starWars_logo.png" id="starwars">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" target="_self" class="pop">
+                                <img src="/img/logos/pop_logo.png" id="pop">
+                            </a>
+                        </div>       
+                    </div>
+                    <!-- <button aria-label="Siguiente" class="carousel__siguiente"><i class="fas fa-chevron-right"></i></button> -->
+                </div>
+                <!-- <div class="carousel__indicadores" role="tablist"></div> -->
+            </section> 
+            <section id="productos">
+                <div class="productos__titulo"><h2>Productos</h2></div>
+                <div class="productos__lista">
+                    <div class="productos__grid-1">
+                        <div class="productos__item">
+                            <a href="/html/modelo_3d/marvel/spidey_gold.html"><img src="/img/productos/modelo_3d/marvel/spidey_gold.jpg" alt="producto" class="productos__img"></a>
+                        </div>
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/dc/joker.jpg" alt="producto" class="productos__img">
+                        </div>
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/pop/caesar.jpg" alt="producto" class="productos__img">
+                        </div>
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/pop/rickandmorty.jpg" alt="producto" class="productos__img">
+                        </div>
+                    </div>
+                    <div class="productos__grid-2">
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/star_wars/halmet.jpg" alt="producto" class="productos__img">
+                        </div>
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/star_wars/vader.jpg" alt="producto" class="productos__img">
+                        </div>
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/dc/bat.jpg" alt="producto" class="productos__img">
+                        </div>
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/star_wars/sable.jpg" alt="producto" class="productos__img">
+                        </div>
+                    </div>
+                    <div class="productos__grid-3">
+                        <div class="productos__item">
+                            <img src="/img/productos/modelo_3d/pop/hannya.jpg" alt="producto" class="productos__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="redes__titulo"><span>Redes Sociales</span></div>
+            <div class="redes-conteiner">
+                <div class="redes-icon">
+                    <a href="#"><img src="/img/logos/face_logo.png" alt="logo" class="redes-icon__img"></a>
+                </div>
+                <div class="redes-icon">
+                    <a href="#"><img src="/img/logos/inst_logo.png" alt=logo"" class="redes-icon__img"></a>
+                </div>
+                <div class="redes-icon">
+                    <a href="#"><img src="/img/logos/wpp_logo.png" alt="logo" class="redes-icon__img"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+ </body>
+ </html>
+ 

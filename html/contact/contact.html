@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodfellas</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/style_contact.css">
+    <!-- FONTS -->
+    <link rel="shortcut icon" href="img/logos/icon.png" type="Mi sitio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div   div class="contenedor">
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="menu">
+                <input type="checkbox" name="btn" id="btn_menu">
+                <label for="btn_menu" class="menu__hamb_icon">
+                    <img src="/img/logos/icon_men.png" alt="">
+                    <!-- <div id="hamburguesa">
+                        <button>
+                            <span class="top_line"></span>
+                            <span class="mid_line"></span>
+                            <span class="bot_line"></span>
+                        </button>
+                    </div> -->
+                </label>
+                <ul class="menu__lista"> 
+                    <li class="menu__link"><a href="/index.html">Inicio</a></li>
+                    <li class="menu__link"><a href="/index.html#productos">Productos</a></li>
+                    <li class="menu__link"><a href="/html/faqs/faqs.html">Info</a></li>
+                    <li class="menu__link"><a href="/html/contact/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="logo"><a href="/index.html"><span>Goodfellas</span></a></div>
+            <div class="buscar"> 
+               <img src="/img/logos/icon_search.svg" alt="buscar" class="buscar__img"></div>
+        </header>
+        <script>
+            const nav = document.querySelector("#hamburguesa button");
+            nav.addEventListener("click", e => {
+                nav.classList.toggle("open");
+            });
+        </script>
+
+        <!-- MENU -->
+        <div class="header__menu">
+            <h1>CONTACTO</h1>
+        </div>
+        <!-- MAIN -->
+        <main class="main">
+            <div>
+                <h2>Escríbenos un mensaje</h2>
+            </div>
+            <form action="" class="formulario">
+                <label for="nombre" class="formulario__items">Nombre</label>
+                <input id="nombre" type="text" class="formulario__items">
+                <label for="email" class="formulario__items">Email</label>
+                <input id="email" type="email" class="formulario__items">
+                <label for="asunto" class="formulario__items">Asunto</label>
+                <input id="asunto" type="text" class="formulario__items">
+                <label for="mensaje" class="formulario__items">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="90" rows="10" class="formulario__area-text">Si tiene alguna pregunta o comentario, este es el lugar para escribirlos...</textarea>
+                <input type="submit" value="Enviar mensaje" class="formulario__items__button">
+            </form>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="redes__titulo"><span>Redes Sociales</span></div>
+            <div class="redes-conteiner">
+                <div class="redes-icon">
+                    <a href="#"><img src="/img/logos/face_logo.png" alt="logo" class="redes-icon__img"></a>
+                </div>
+                <div class="redes-icon">
+                    <a href="#"><img src="/img/logos/inst_logo.png" alt=logo"" class="redes-icon__img"></a>
+                </div>
+                <div class="redes-icon">
+                    <a href="#"><img src="/img/logos/wpp_logo.png" alt="logo" class="redes-icon__img"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
