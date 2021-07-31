@@ -1,0 +1,23 @@
+
+.footer {
+    border-top: 2px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+}
+.redes__titulo{
+    text-align: center;
+    padding: 10px;
+    font-family: var(--letra-principal);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.redes-conteiner{
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;  
+}
+.redes-icon__img{
+    width: 50px;
+    margin: 0 1rem;
+}

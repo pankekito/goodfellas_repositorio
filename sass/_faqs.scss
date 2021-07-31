@@ -1,0 +1,32 @@
+
+/* menu */
+.header__menu-faq {
+    height: 300px;
+    background-image: url(/img/background/night_city.gif);
+    h1 {
+        color: var(--color-letras);
+        background:transparent;
+        display: flex;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        font-family: 'Permanent Marker', cursive;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+}
+/* main */
+.main-faq {
+    height: 100vh;
+    background-color: var(--color-fondo);
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+.container-faq {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    ul{
+        justify-content: space-around;
+    }
+}

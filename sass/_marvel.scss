@@ -1,0 +1,98 @@
+
+/* menu */
+.header__menu-marvel{
+    width: auto;
+    height: 10rem;
+    padding: 40px;
+    display: block;
+    background-image: url(/img/background/marvel_banner.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    img {
+        width: 100%;
+        float: left;
+    }
+    
+}
+
+/* MAIN */
+.productos{
+    margin: 0 auto;
+}
+.productos__titulo{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-fondo);
+    font-family: 'Rock Salt', cursive;;
+    font-size: 0.6rem;
+    color: var(--color-letras);
+    letter-spacing: 0.1rem;
+    padding-top: 10px;
+}
+.productos__lista{
+    background-color: var(--color-fondo);
+    height: 100%;
+}
+.productos__img{
+    height: 100%;
+    width: auto;
+    border-radius: 1rem;
+    max-height: 300px;
+}
+.productos__grid-1 {
+    display: flex;
+    flex-flow:wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items:center;
+}
+.productos__grid-2 {
+    display: flex;
+    flex-flow:wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items:center;
+}
+.productos__grid-3 {
+    display: flex;
+    flex-flow:wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items:center;
+}
+.productos__item{
+    padding: 80px 0;
+}
+
+@media screen and (min-width: 768px) {
+    // menu 
+.header__menu-marvel {
+    width: auto;
+    height: 250px;
+    padding: 40px;
+    display: block;
+    background-image: url(/img/background/marvel_banner.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: #d11820;
+    img {
+        display: none;
+    }
+}
+}
+
+@media screen and (min-width: 1024px) {
+    // MAIN 
+    .productos__titulo{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background-color: var(--color-fondo);
+        font-family: 'Rock Salt', cursive;
+        font-size: 1rem;
+        color: var(--color-letras);
+        letter-spacing: 0.1rem;
+        padding-top: 50px;
+    }
+}

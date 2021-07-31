@@ -1,0 +1,38 @@
+
+/* main */
+
+.product{
+    background-color: var(--color-fondo);
+    font-family: 'Permanent Marker', cursive;
+    height: 100%;
+    color: #fff;
+}
+.product__container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+.principal div img{
+    width: 300px;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    // main 
+    .product{
+        background-color: var(--color-fondo);
+        font-family: 'Permanent Marker', cursive;
+        height: 100vh;
+    }
+    .product__container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .principal img{
+        width: 300px;
+        border-radius: 1rem;
+    }
+}

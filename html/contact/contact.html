@@ -4,67 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodfellas</title>
+    <title>Goodfellas | Contacto</title>
+    <meta name="description" content="En esta seccion podras ponerte en contacto con nuestro equipo">
+    <meta name="keywords" content="3D, IMPRESIONES, GOODFELLAS, CALIDAD, PREMIUM, CONTACTO, DUDAS, PREGUNTAS">
     <!-- CSS -->
-    <link rel="stylesheet" href="/styles/style_contact.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/logos/icon.png" type="Mi sitio">
     <!-- FONTS -->
-    <link rel="shortcut icon" href="img/logos/icon.png" type="Mi sitio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+   <!-- BOOTSTRAP -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 <body>
     <div   div class="contenedor">
-        <!-- HEADER -->
-        <header class="header">
-            <nav class="menu">
-                <input type="checkbox" name="btn" id="btn_menu">
-                <label for="btn_menu" class="menu__hamb_icon">
-                    <img src="/img/logos/icon_men.png" alt="">
-                    <!-- <div id="hamburguesa">
-                        <button>
-                            <span class="top_line"></span>
-                            <span class="mid_line"></span>
-                            <span class="bot_line"></span>
-                        </button>
-                    </div> -->
-                </label>
-                <ul class="menu__lista"> 
-                    <li class="menu__link"><a href="/index.html">Inicio</a></li>
-                    <li class="menu__link"><a href="/index.html#productos">Productos</a></li>
-                    <li class="menu__link"><a href="/html/faqs/faqs.html">Info</a></li>
-                    <li class="menu__link"><a href="/html/contact/contact.html">Contacto</a></li>
-                </ul>
+         <!-- HEADER -->
+         <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark header__nav custom-nav">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Goodfellas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/html/categorias/marvel/marvel.html">Marvel</a></li>
+                        <li><a class="dropdown-item" href="#">DC</a></li>
+                        <li><a class="dropdown-item" href="#">StarWars</a></li>
+                        <li><a class="dropdown-item" href="#">POP</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/faqs/faqs.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/contact/contact.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
             </nav>
-            <div class="logo"><a href="/index.html"><span>Goodfellas</span></a></div>
-            <div class="buscar"> 
-               <img src="/img/logos/icon_search.svg" alt="buscar" class="buscar__img"></div>
         </header>
-        <script>
-            const nav = document.querySelector("#hamburguesa button");
-            nav.addEventListener("click", e => {
-                nav.classList.toggle("open");
-            });
-        </script>
-
         <!-- MENU -->
-        <div class="header__menu">
+        <div class="header__menu-contacto">
             <h1>CONTACTO</h1>
         </div>
         <!-- MAIN -->
-        <main class="main">
+        <main class="main-contacto">
             <div>
                 <h2>Escríbenos un mensaje</h2>
             </div>
-            <form action="" class="formulario">
-                <label for="nombre" class="formulario__items">Nombre</label>
-                <input id="nombre" type="text" class="formulario__items">
-                <label for="email" class="formulario__items">Email</label>
-                <input id="email" type="email" class="formulario__items">
-                <label for="asunto" class="formulario__items">Asunto</label>
-                <input id="asunto" type="text" class="formulario__items">
-                <label for="mensaje" class="formulario__items">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="90" rows="10" class="formulario__area-text">Si tiene alguna pregunta o comentario, este es el lugar para escribirlos...</textarea>
+            <form action="" class="formulario-contacto">
+                <label for="nombre" class="formulario__items-contacto">Nombre</label>
+                <input id="nombre" type="text" class="formulario__items-input">
+                <label for="email" class="formulario__items-contacto">Email</label>
+                <input id="email" type="email" class="formulario__items-input">
+                <label for="asunto" class="formulario__items-contacto">Asunto</label>
+                <input id="asunto" type="text" class="formulario__items-input">
+                <label for="mensaje" class="formulario__items-contacto">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="90" rows="10" class="formulario__area-text-contacto">Si tiene alguna pregunta o comentario, este es el lugar para escribirlos...</textarea>
                 <input type="submit" value="Enviar mensaje" class="formulario__items__button">
             </form>
         </main>
@@ -85,5 +93,8 @@
             </div>
         </footer>
     </div>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

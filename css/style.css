@@ -1,0 +1,658 @@
+:root {
+  --color-fondo: #212529;
+  --color-secundario: #7a04eb;
+  --color-letras: #fff;
+  --letra-principal: 'Rock Salt', cursive;
+}
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  background-color: var(--color-fondo);
+}
+
+.carousel__lista {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5c58b6), color-stop(#5d4fc6), color-stop(#6243d5), color-stop(#6c31e1), to(#7a04eb));
+  background-image: linear-gradient(to right, #5c58b6, #5d4fc6, #6243d5, #6c31e1, #7a04eb);
+  z-index: 0;
+}
+
+#marvel {
+  width: 5em;
+}
+
+#marvel:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#dc {
+  width: 3em;
+  background-color: transparent;
+}
+
+#dc:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#starwars {
+  width: 4em;
+  background-color: transparent;
+}
+
+#starwars:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#pop {
+  width: 3.5em;
+  background-color: transparent;
+}
+
+#pop:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel__lista {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 0;
+  }
+  #marvel {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    width: 5em;
+  }
+  #marvel:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  #dc {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    width: 3em;
+    background-color: transparent;
+  }
+  #dc:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  #starwars {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    width: 4em;
+    background-color: transparent;
+  }
+  #starwars:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  #pop {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    width: 3.5em;
+    background-color: transparent;
+  }
+  #pop:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+}
+
+#productos {
+  margin: 0 auto;
+}
+
+.productos__titulo {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-fondo);
+  font-family: var(--bs-font-sans-serif);
+  color: #fff;
+  letter-spacing: 0.1rem;
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+.productos__lista {
+  background-color: var(--color-fondo);
+  height: 100%;
+}
+
+.productos__img {
+  height: 100%;
+  width: auto;
+  border-radius: 1rem;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.productos__grid-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos__grid-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos__grid-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos__item {
+  padding: 80px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  /* MAIN */
+  .productos__titulo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-fondo);
+    padding-top: 50px;
+    font-size: 3rem;
+  }
+}
+
+.footer {
+  border-top: 2px solid var(--color-secundario);
+  background-color: var(--color-secundario);
+}
+
+.redes__titulo {
+  text-align: center;
+  padding: 10px;
+  font-family: var(--letra-principal);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.redes-conteiner {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redes-icon__img {
+  width: 50px;
+  margin: 0 1rem;
+}
+
+/* menu */
+.header__menu-faq {
+  height: 300px;
+  background-image: url(/img/background/night_city.gif);
+}
+
+.header__menu-faq h1 {
+  color: var(--color-letras);
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: 'Permanent Marker', cursive;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 6rem;
+}
+
+/* main */
+.main-faq {
+  height: 100vh;
+  background-color: var(--color-fondo);
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.container-faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.container-faq ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* menu */
+.header__menu-contacto {
+  height: 300px;
+  padding: 40px;
+  display: block;
+  background-image: url(/img/background/night_city.gif);
+  background-position: center;
+  text-align: center;
+  width: 100%;
+}
+
+.header__menu-contacto h1 {
+  color: var(--color-letras);
+  font-family: var(--letra-principal);
+  background: transparent;
+  display: inline-block;
+  margin-top: 6rem;
+  font-size: 80px;
+  letter-spacing: 5px;
+  font-size: 100%;
+}
+
+/* main */
+.main-contacto {
+  background-color: var(--color-fondo);
+  height: 100vh;
+}
+
+.main-contacto h2 {
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.formulario-contacto {
+  width: 10px;
+  padding: 0 10px;
+  font-family: 'Permanent Marker', cursive;
+  padding-bottom: 5rem;
+}
+
+.formulario__items-contacto {
+  display: block;
+  color: #fff;
+  letter-spacing: 4px;
+  margin: 20px 0;
+}
+
+.formulario__items-input {
+  margin: 0;
+}
+
+.formulario__area-text-contacto {
+  width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-contacto {
+    height: 300px;
+    padding: 40px;
+    display: block;
+    background-image: url(/img/background/night_city.gif);
+    background-position: center;
+    text-align: center;
+    width: 100%;
+  }
+  .header__menu-contacto h1 {
+    color: var(--color-letras);
+    font-family: var(--letra-principal);
+    background: transparent;
+    display: inline-block;
+    margin-top: 6rem;
+    letter-spacing: 5px;
+    font-size: 2rem;
+  }
+  .main-contacto {
+    background-color: var(--color-fondo);
+    height: 100vh;
+  }
+  .main-contacto h2 {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .formulario-contacto {
+    margin: 50px 100px;
+    width: 10px;
+    padding: 0 10px;
+    font-family: 'Permanent Marker', cursive;
+    padding-bottom: 5rem;
+  }
+  .formulario__items-contacto {
+    display: block;
+    letter-spacing: 4px;
+    color: #fff;
+  }
+  .formulario__area-text-contacto {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-contacto {
+    background-color: var(--color-fondo);
+    height: 100vh;
+  }
+  .main-contacto h2 {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .formulario-contacto {
+    margin: 50px 30%;
+    width: 10px;
+    padding: 0 10px;
+    font-family: 'Permanent Marker', cursive;
+    padding-bottom: 5rem;
+  }
+  .formulario__items-contacto {
+    display: block;
+    letter-spacing: 4px;
+  }
+  .formulario__area-text-contacto {
+    width: 700px;
+  }
+}
+
+/* menu */
+.header__menu-marvel {
+  width: auto;
+  height: 10rem;
+  padding: 40px;
+  display: block;
+  background-image: url(/img/background/marvel_banner.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__menu-marvel img {
+  width: 100%;
+  float: left;
+}
+
+/* MAIN */
+.productos {
+  margin: 0 auto;
+}
+
+.productos__titulo {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-fondo);
+  font-family: 'Rock Salt', cursive;
+  font-size: 0.6rem;
+  color: var(--color-letras);
+  letter-spacing: 0.1rem;
+  padding-top: 10px;
+}
+
+.productos__lista {
+  background-color: var(--color-fondo);
+  height: 100%;
+}
+
+.productos__img {
+  height: 100%;
+  width: auto;
+  border-radius: 1rem;
+  max-height: 300px;
+}
+
+.productos__grid-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos__grid-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos__grid-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productos__item {
+  padding: 80px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-marvel {
+    width: auto;
+    height: 250px;
+    padding: 40px;
+    display: block;
+    background-image: url(/img/background/marvel_banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #d11820;
+  }
+  .header__menu-marvel img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .productos__titulo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-fondo);
+    font-family: 'Rock Salt', cursive;
+    font-size: 1rem;
+    color: var(--color-letras);
+    letter-spacing: 0.1rem;
+    padding-top: 50px;
+  }
+}
+
+/* main */
+.product {
+  background-color: var(--color-fondo);
+  font-family: 'Permanent Marker', cursive;
+  height: 100%;
+  color: #fff;
+}
+
+.product__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.principal div img {
+  width: 300px;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .product {
+    background-color: var(--color-fondo);
+    font-family: 'Permanent Marker', cursive;
+    height: 100vh;
+  }
+  .product__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 10px;
+  }
+  .principal img {
+    width: 300px;
+    border-radius: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
